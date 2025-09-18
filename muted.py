@@ -9,7 +9,7 @@ def main():
     
     # For the real target:
     host = '34.252.33.37'
-    port = 31651
+    port = 31276
     p = remote(host, port)
     # Configure pwntools context for correct shellcode assembly
     context.update(arch='amd64', os='linux')
@@ -47,4 +47,5 @@ def main():
     print(response.decode('latin-1')) # Decode to cleanly print any bytes
     p.close()
 if __name__ == '__main__':
+
     main()
